@@ -38,7 +38,7 @@ export default function SpecificMovie({id}) {
         <div>
           <p>{movie.Country}</p>
           <p>{movie.Production}</p>
-          <p>{movie.imdbRating}</p>
+          <p>Rating: {movie.imdbRating}</p>
           <p>{movie.Language}</p>
           <p>{movie.Actors}</p>
           <p>Box office {movie.BoxOffice}</p>
