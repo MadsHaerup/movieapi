@@ -10,3 +10,14 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+if("serviceWorker" in navigator){
+  window.addEventListener("load", function(){
+    navigator.serviceWorker.register('/sw.js')
+    .then(function(registration){
+      console.log("sw registered");
+    },function(err){
+      console.log("wrong", err)
+    })
+  })
+}
