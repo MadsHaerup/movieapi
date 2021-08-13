@@ -1,6 +1,7 @@
 const CACHE_NAME = "movietime_cache_v1";
 var urlsToCache = [
-"/"
+"/",
+"/index.html",
 ];
 
 self.addEventListener("install", function (event) {

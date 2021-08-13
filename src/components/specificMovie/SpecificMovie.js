@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Logo from '../movie/Logo';
 import './SpecificMovie.css';
 require('dotenv').config();
 export default function SpecificMovie({id}) {
@@ -26,16 +27,18 @@ export default function SpecificMovie({id}) {
   }, [])
 
   return (
+    <>
+    <Logo/>
     <div className="specificMovie">
        <h1 className="specificMovie__title" >{movie.Title}</h1>
        <div className ="specificMovie__details">
-       <p>{movie.Type}</p>
-       <p>{movie.Runtime}</p>
-       <p>{movie.Genre}</p>
+        <p>{movie.Type}</p>
+        <p>{movie.Runtime}</p>
+        <p>{movie.Genre}</p>
        </div>
       <div className="specificMovie__overview">
         <img className="specificMovie__image" src={movie.Poster} alt="" />
-        <div>
+        <div className="specificMovie__info">
           <p>{movie.Country}</p>
           <p>{movie.Production}</p>
           <p>Rating: {movie.imdbRating}</p>
@@ -51,5 +54,6 @@ export default function SpecificMovie({id}) {
         </div>
       <p>{movie.Plot}</p>
     </div>
+    </>
   )
 }

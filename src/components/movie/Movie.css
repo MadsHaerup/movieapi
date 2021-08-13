@@ -1,13 +1,13 @@
 .singleMovie{
   text-decoration: none;
-  color: black;
+  color:rgb(230, 230, 230);
 }
 
 .movie{
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background: hsl(220, 12%, 95%);
+  background: hsl(0deg 0% 17%);
   box-shadow: 0 2px 6px hsla(0, 0%, 0%, 0.2);
   margin-bottom: 1rem;
   gap: 1rem;

@@ -12,7 +12,7 @@ export default function SearchBar({handleSearch}) {
       placeholder="Search" 
       name="search"
       onKeyPress={(e) => e.key === "Enter" ? handleSearch(e) : null}  
-      onMouseOut={(e) =>  handleSearch(e)}
+      onMouseOut={(e) =>  handleSearch(e) }
       />
 
       {/* <button type="submit" id="search" >Search</button> */}
